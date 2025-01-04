@@ -3,6 +3,7 @@ package com.test2;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+// Data provider example
 public class DataProviderExample {
 
     @Test(dataProvider = "loginDetails",dataProviderClass=CustomDataProviderClass.class)
