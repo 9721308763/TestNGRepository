@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+    <test thread-count="5" name="/Users/vijaychaurasiya/TestNG_Practicals/TestNG2/.idea(failed)">
+        <classes>
+            <class name="com.test.FirstTestCase">
+                <methods>
+                    <include name="tearDown"/>
+                </methods>
+            </class> <!-- com.test.FirstTestCase -->
+        </classes>
+    </test> <!-- /Users/vijaychaurasiya/TestNG_Practicals/TestNG2/.idea(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
