@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    
-    <parameter name="browser" value="chrome"></parameter>
-    <parameter name="url" value="https://www.orangehrm.com/en/book-a-free-demo"></parameter>
-   <test name="ParameterDemo">
-    <classes>
-        <class name="com.test2.ParameterExample"/>
-    </classes>   
-   </test>
+<suite name="All Test Suite" parallel="tests" thread-count="2">
+    <test name="test1">
+        <classes>
+            <class name="com.test2.ParallelTest1">
+                <methods>
+                    <include name="logoTest"/>
+                    <include name="homePageTitle"/>
+                </methods>
+            </class>
+            <class name="com.test2.ParallelTest2">
+
+            </class>
+        </classes>
+    </test>
+
+    <test name="test2">
+        <classes>
+            <class name="com.test2.ParallelTest1">
+                <methods>
+                    <include name="logoTest"/>
+                    <include name="homePageTitle"/>
+                </methods>
+            </class>
+            <class name="com.test2.ParallelTest2">
+
+            </class>
+        </classes>
+    </test>
 </suite>
